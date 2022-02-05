@@ -53,6 +53,7 @@ for( let i=0; i<mynumber.length; i++ ){
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
 
+/* MY ORIGINAL LOOP BACKWARDS
 let mycounter = [5,4,3,2,1,0];
  for( let i=0; i<mycounter.length; i++ ){
   if( mycounter[ i ] == '5' ){
@@ -74,14 +75,29 @@ let mycounter = [5,4,3,2,1,0];
     console.log( mycounter[ i ],`HAPPY NEW YEAR!!` );
   }
 }
+*/
+
+// AFTER COMPLETING 3-C re-did the countdown to 0
+for (let i=5; i>=0; i--) {
+  if (i >= 1) {
+    console.log(i);
+  }
+  else if ( i === 0 ) {
+    console.log( i, `Happy New Year!!` );
+  }
+}
 
 
 // 2. For of loops
 console.log('---- 2. For Of loop ----');
-let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
+let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb'];
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
 console.log('Some stars:');
+
+for ( type of stars ){
+  console.log( `Some stars:`, type);
+}
 
 
 // 3. While loops
@@ -90,8 +106,31 @@ console.log('---- 3. While loop ----');
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
 
+
+let i = 0;
+while ( stars[i] ){
+  console.log( `Some stars using while:`, stars[i] );
+  i++;
+}
+
+
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
 
+let i_c = 0;
+const max = 5;
+while ( i_c < max ){
+  console.log( `in while loop. i_c:`, i_c );
+  i_c++;
+}
+
+
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+
+let i_d = 10;
+const max2 = 5;
+while ( i_d >= max2 ){
+  console.log( `in while loop. i_d:`, i_d );
+  i_d--;
+}
