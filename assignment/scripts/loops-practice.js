@@ -30,9 +30,50 @@ for (let i=3; i<=5; i++) {
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
 
+let mynumber = [1,2,3,4,5,6,7,8,9,10];
+for( let i=0; i<mynumber.length; i++ ){
+  if( mynumber[ i ] == '2' ){
+    console.log( mynumber[ i ],`is an even number` );
+  }
+  if( mynumber[ i ] == '4' ){
+    console.log( mynumber[ i ],`is an even number` );
+  }
+  if( mynumber[ i ] == '6' ){
+    console.log( mynumber[ i ],`is an even number` );
+  }
+  if( mynumber[ i ] == '8' ){
+    console.log( mynumber[ i ],`is an even number` );
+  }
+  if( mynumber[ i ] == '10' ){
+    console.log( mynumber[ i ],`is an even number` );
+  }
+}
+
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
+
+let mycounter = [5,4,3,2,1,0];
+ for( let i=0; i<mycounter.length; i++ ){
+  if( mycounter[ i ] == '5' ){
+    console.log( mycounter[ i ] );
+  }
+  if( mycounter[ i ] == '4' ){
+    console.log( mycounter[ i ] );
+  }
+  if( mycounter[ i ] == '3' ){
+    console.log( mycounter[ i ] );
+  }
+  if( mycounter[ i ] == '2' ){
+    console.log( mycounter[ i ] );
+  }
+  if( mycounter[ i ] == '1' ){
+    console.log( mycounter[ i ] );
+  }
+  if( mycounter[ i ] == '0' ){
+    console.log( mycounter[ i ],`HAPPY NEW YEAR!!` );
+  }
+}
 
 
 // 2. For of loops
